@@ -8,7 +8,7 @@ const Feed = () => {
 
   const [selectedCategory, setSelectedCategory] = useState('New')
   const [videos, setVideos] = useState([])
-
+  console.log(process.env.API_KEY)
   useEffect(() => {
     fetchFromAPI(`search?part=snippet&q=${selectedCategory}`)
       .then((data) => {

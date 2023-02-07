@@ -2,7 +2,6 @@ import { Box } from '@mui/material'
 import { Route, Routes } from 'react-router-dom'
 import { ChannelDetail, Feed, Navbar, SearchFeed, VideoDetail } from './components'
 
-
 const App = () => (
         <Box sx={{backgroundColor: '#000' }}>
             <Navbar />
