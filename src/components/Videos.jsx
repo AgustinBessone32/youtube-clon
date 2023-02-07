@@ -1,5 +1,5 @@
 import { Box, Stack } from '@mui/material';
-import { ChannelCard, Spinner, VideoCard } from './';
+import { Spinner, VideoCard } from './';
 
 const Videos = ({videos ,justify, direction}) => {
 
@@ -11,7 +11,6 @@ const Videos = ({videos ,justify, direction}) => {
         videos.map((item, idx)=> (
           <Box key={idx}>
               {item.id.videoId && <VideoCard video={item}/>}
-              {item.id.channelId && <ChannelCard channel={item}/>}
           </Box>
         ))
       : 

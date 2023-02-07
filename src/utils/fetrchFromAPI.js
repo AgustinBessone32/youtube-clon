@@ -1,4 +1,5 @@
 import axios from "axios";
+import { API_KEY_VIDEOS } from '../config';
 
 const BASE_URL = 'https://youtube-v31.p.rapidapi.com'
 
@@ -10,7 +11,7 @@ const options = {
       order: 'date'
     },
     headers: {
-      'X-RapidAPI-Key': process.env.API_KEY_VIDEOS,
+      'X-RapidAPI-Key': API_KEY_VIDEOS,
       'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
     }
   };
